@@ -1,12 +1,21 @@
 // pages/index.js
 "use client";
 import React from "react";
-import { AppBar, Toolbar, Typography, Container, Button, Box } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Container,
+  Button,
+  Box,
+  
+} from "@mui/material";
+import Grid from "@mui/material/Grid2";
 
 // Компонент Header
 function Header() {
   return (
-    <AppBar position="static" >
+    <AppBar position="static">
       <Toolbar>
         <Typography variant="h6">My Application</Typography>
       </Toolbar>
@@ -22,11 +31,25 @@ function Content() {
         <Typography variant="h4" gutterBottom>
           Welcome to My Application!
         </Typography>
-        <Typography variant="body1">This is a simple application using React and Material-UI.</Typography>
+        <Typography variant="body1">
+          This is a simple application using React and Material-UI.
+        </Typography>
         <Button variant="contained" color="primary">
           Get Started
         </Button>
       </Container>
+    </>
+  );
+}
+
+function Hero() {
+  return (
+    <>
+      <Box minHeight={300}  sx={{ background: "grey" }}>
+
+      </Box>
+
+      
     </>
   );
 }
@@ -48,6 +71,7 @@ export default function Home() {
   return (
     <Box>
       <Header />
+      <Hero />
       <Content />
       <Footer />
     </Box>

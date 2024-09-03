@@ -6,7 +6,7 @@ import { AppBar, Toolbar, Typography, Container, Button, Box } from "@mui/materi
 // Компонент Header
 function Header() {
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#3f51b5" }}>
+    <AppBar position="static" >
       <Toolbar>
         <Typography variant="h6">My Application</Typography>
       </Toolbar>

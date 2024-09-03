@@ -20,7 +20,7 @@ function Content() {
     <>
       <Container maxWidth="xl">
         <Typography variant="h4" gutterBottom>
-          Welcome to My Application
+          Welcome to My Application!
         </Typography>
         <Typography variant="body1">This is a simple application using React and Material-UI.</Typography>
         <Button variant="contained" color="primary">
